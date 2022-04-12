@@ -1,0 +1,836 @@
+:root{
+	--back_color: #0c1027;
+}
+
+/*This the code to customize the scroll bar.....(innovation)*/
+html::-webkit-scrollbar{
+	width: 1vw;
+}
+html::-webkit-scrollbar-thumb{
+	background: linear-gradient(transparent,#e600e6);
+	border-radius: 30vw;
+	transition: all 0.2s ease-in-out;
+}
+html::-webkit-scrollbar-thumb:horizontal{
+  background: linear-gradient(to right,transparent,#e600e6);
+	border-radius: 30vw;
+	transition: all 0.2s ease-in-out;	
+}
+/*This scroll bar changes the color on the hovering.*/
+html::-webkit-scrollbar-thumb:horizontal:hover{
+	background: linear-gradient(to right,transparent,#ff3399);
+}
+html::-webkit-scrollbar-thumb:hover{
+	background: linear-gradient(transparent,#ff3399);
+}
+/*Few change that are applied to the body of the page.*/
+body{
+	background-color: var(--back_color);
+	padding: 0px;
+	margin: 0px;
+	padding-bottom: 40vh;
+}
+/*This is the styling for the nav bar. Here the position
+of the nav section has been set fixed so that nav stays intact even
+after scrolling.
+*/
+nav{
+	position: fixed;
+	background-color:rgba(0,0,0,0.5);
+	z-index: 1000;
+}
+#Nav_bar{
+	height: 15vh;
+	width: 100vw;
+	position: relative;
+}
+.Nav_List{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+/*Creating my own custom logo (Innovation) from font Awesome icons
+ using the position properties.*/
+#logo{
+	 position: relative;
+	 left: -2rem;
+	 height: 15vh;
+	 width: 150px;
+	 justify-content: inherit;
+}
+#logo_part1{
+	font-size: 0.5rem;
+	position: relative;
+	top: -1.6rem;
+	left: 0.3rem;
+	transform: rotateZ(-15deg);
+	color:  #b08dbf;
+}
+#logo_part2{
+	font-size: 3rem;
+	color:  #ffcc00 ;
+}
+#logo_part3{
+	font-size: 3rem;
+	color: #23b8d9;
+	position: relative;
+	left: -2rem;
+}
+#logo_part4{
+	position: relative;
+	top: -2rem; left: 2.5rem;
+	transform: rotateZ(-25deg);
+	font-size: 1rem;
+	color: #ff4f0a;
+}
+#Logo_Name{
+	position: relative;
+    font-size: 1rem;
+    left: 1.3rem;
+    color: rgb(204, 82, 0);
+    font-family: Papyrus;
+    font-weight: 900;
+}
+
+/*Making other items of the Nav bar*/
+/*Setting up the elements of Nav Bar at there 
+correct position using flex properties like justify-content
+and align-items.
+*/
+a{
+	text-decoration: none;
+	color: white;
+}
+#Fav{
+	height: 15vh;
+	width: 400px;
+	font-family: monospace;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+	transition: text-decoration 2s ease-in-out;
+}
+#Fav:hover{
+	text-decoration: underline;
+}
+#Search_bar{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 15vh;
+	width: 200px;
+}
+#Search_bar input{
+	background-color: #12193e;
+	padding: 0.3rem 0.3rem 0.3rem 2rem;
+	border: none;
+	border-radius: 10px;
+	height: 3vh;
+	font-size: 1rem;
+	color: whitesmoke;
+	font-family: monospace;
+}
+#Search_bar button{
+	background-color: #12193e ;
+	color: #93a8b3;
+	border: none;
+	border: 90px;
+	position: relative;
+	left: -2rem;
+}
+#bell{
+	position: relative;
+	height: 15vh;
+	width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: whitesmoke;
+	cursor: pointer;
+}
+#Profile_Pic{
+	height: 50px;
+	width: 50px;
+	border-radius: 60px;
+	box-shadow: 0px 0px 6px 4px black;
+	cursor: pointer;
+}
+#Profile{
+	height: 15vh;
+	width: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*Making the Home Screen Carousel
+This the rotating Home Screen Carousel:
+(Innovation)*/
+.slidershow{
+	position: relative;
+	top: 25vh; left: 2vw;
+  	width: 55vw;
+  	height: 70vh;
+  	overflow-x: hidden;
+  	border-radius: 10px;
+  	box-shadow: 0px 0px 60px 0px white;
+  	/*This box shadow is with zero length of shodow but with blur 
+  	as non zero value this provides a neon look to the design template*/
+
+  	/*This is (Innovation)*/
+}
+
+.navigation{
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.bar:hover{
+  background: #fff;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide{
+  width: 20%;
+  transition: 0.6s;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -20%;
+}
+#r3:checked ~ .s1{
+  margin-left: -40%;
+}
+#r4:checked ~ .s1{
+  margin-left: -60%;
+}
+#r5:checked ~ .s1{
+  margin-left: -80%;
+}
+
+/*This the latest release section built using 
+the flex display in order to provide responsiness.*/
+.Latest_Release{
+	position: relative;
+	top: 30vh; left: 2vw;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100vw;
+	min-width: 300px;
+	color: white;
+	padding: 10px;
+	font-family: monospace;
+}
+.Table_contents{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	flex-wrap: wrap;
+}
+/*Desinging the each card of the Latest released Section*/
+.entry{
+	width: 300px;
+	height: 150px;
+	background-color:  #12183b;
+	border-radius: 10px;
+	box-shadow: 0px 0px 30px 0px hotpink;
+	position: relative;
+	margin: 20px;
+	font-size: 1rem;
+}
+.Image_style{
+	border-radius: 30px;
+}
+/*This is for the play button that appear on hovering a image of the
+new released song.
+Play_button for: Latest Released Cards
+*/
+.Play_button{
+	font-size: 3.5rem;
+	height:135px;
+	width: 100%;
+	border-radius: 30px;
+	background-color:rgba(128, 128, 128,0.4);
+	position: absolute;
+	top: 1px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 0px 20px 10px  #262626 inset;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	font-weight: 900;
+	opacity: 0;
+}
+.Parent_of_Image{
+	position: relative;
+}
+.Parent_of_Image:hover .Play_button{
+	opacity: 1;
+}
+/*This the drop down menu of the Latest Release Cards*/
+#Dropdown_Menu1{
+	height: 180px;
+	width: 200px;
+	background-color:rgb(26, 26, 26);
+	opacity: 0;
+	display: none;
+	position: absolute;
+	top: 20px; right: 20px;
+	transition: all 1s ease-in-out;
+	z-index: 40;
+}
+#Dropdown_Menu1 ul{
+	text-align: left;
+	margin-left: -33px;
+}
+#Dropdown_Menu1 ul li{
+	list-style: none;
+	text-align: left;
+	margin-bottom:20px;
+}
+.Parent_of_DropDown_menu1:hover #Dropdown_Menu1{
+	opacity: 1;
+	display: block;
+}
+/*This the popular artist section styling. This section has
+used flex properties in order to provide responsiveness like
+justify-content and align-items
+*/
+.Pop_artist_Section{
+	position: relative;
+	top: 30vh; left: 2vw;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 100vw;
+	min-width: 300px;
+	color: white;
+	padding: 10px;
+	font-family: monospace;
+}
+.Pop_Artist{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.Artist{
+	width: 200px;
+	height: 200px;
+	background-color:  #12183b;
+	border-radius: 150px;
+	box-shadow: 0px 0px 30px 0px #10f5e9;
+	position: relative;
+	margin:50px;
+	position: relative;
+	text-align: center;
+	border: 3px solid black;
+	font-size: 1.2rem;
+}
+/*This is for the play button that appear on hovering a image of the
+artist.
+Play_button_2 for: Popular artist Cards;
+*/
+.Play_button_2{
+	height: 200px;
+	width: 200px;
+	border-radius: 150px;
+	background-color:rgba(128, 128, 128,0.4);
+	position: absolute; top: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 0px 20px 10px  #262626 inset;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	font-weight: 900;
+	font-size: 3.5rem;
+	opacity: 0;
+}
+.Image_style_2{
+	border-radius: 100px;
+}
+.Artist:hover .Play_button_2{
+	opacity: 1;
+}
+/*This the Music stations section styling. This section has
+used flex properties in order to provide responsiveness like
+justify-content and align-items
+*/
+.Music_stations{
+	position: relative;
+	top: 30vh; left: 2vw;
+	width: 98%; height: auto;
+	display: flex;
+	background-color: #101642;
+	padding: 1rem;
+	font-family: monospace;
+}
+.MStations{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-between;
+	width: 85%;
+	height: auto;
+	cursor: pointer;
+}
+.MStations_Logo { 
+	width: 15%;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.Stations{
+	height: 125px;
+	width: 125px;
+	border-radius: 150px;
+	margin: 20px ;
+	position: relative;
+	font-size: 1rem;
+	font-family: "Lucida Handwriting";
+	color: white;
+	overflow: hidden;
+}
+.Station_Label{
+	display: flex;
+	height: 125px;
+	width: 125px;
+	border-radius: 150px;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(51, 51, 51 ,0.5);
+}
+
+
+/*This the Special Occassion Playlist section styling. This section has
+used flex properties in order to provide responsiveness like
+justify-content and align-items
+*/
+
+.Special_Occasions{
+	display: flex;
+	width: 98%;
+	position: relative;
+	top: 35vh;
+	font-family: monospace;
+	padding: 0rem 2rem;
+}
+.Special_Occasions_Logo{
+	width: 15%;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-left: 15px;
+}
+.Special_Occasion_Cards{
+	width: 85%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.Socc_Card{
+	height: 120px;
+	width: 200px;
+	margin-bottom: 20px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	margin-left: 15px;
+}
+.Socc_Image{
+	height: 100%;
+	width: 100%;
+	transition: all 1s ease-in-out;
+}
+.Socc_Card:hover .Socc_Image{
+	height: 105%;
+	width: 105%;
+}
+.Heading_Of_Card{
+	position: absolute;
+	height: 120px;
+	width: 200px;
+	background-color: rgba(51, 51, 51,0.5);
+	top: 0px; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Lucida Handwriting";
+	color: white;
+	box-shadow: 0px 0px 20px 0px #999999 inset;
+}
+/*This the Latest Release of hindi and english songs section styling. This section has
+used flex properties in order to provide responsiveness like
+justify-content and align-items
+*/
+.Lsections{
+	display: flex;
+	width: 98%;
+	position: relative;
+	top: 40vh;
+	font-family: monospace;
+	padding: 0rem 2rem;
+	margin-bottom: 5rem;
+	margin-top: 5rem;
+}
+.Lsection_Logo{
+	width: 15%;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-left: 15px;
+}
+.Lcards{
+	width: 85%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.Lcard{
+	height: 200px;
+	width: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: white;
+	font-size: 1rem;
+	margin: 0.5rem ;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+}
+.Play_button_Lsec{
+	height: 150px;
+	width: 100%;
+	border-radius: 5px 5px 0px 0px;
+	position: absolute;
+	top: 0px; left: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(102, 102, 102,0.4);
+	box-shadow: 0px 0px 20px 0px #d9d9d9;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+/*Play button appears on hovering over the card.*/
+.Lcard:hover .Play_button_Lsec{
+	opacity: 1;
+}
+/*This the My Playlist section styling. This section has
+used flex properties in order to provide responsiveness like
+justify-content and align-items
+*/
+.Queue_Section{
+	height: 80vh;
+	width: 35vw;
+	position: absolute;
+	top: 25vh; right: 0px;
+	box-shadow: 0px 0px 50px 0px whitesmoke;
+	border-radius: 20px;
+	overflow-y: scroll;
+	padding: 1rem;
+	font-family: monospace;
+	color: white;
+	z-index: 78;
+}
+/*Changing the scrollBar of the My playlist section.*/
+.Queue_Section::-webkit-scrollbar{
+	width: 1vw;
+}
+.Queue_Section::-webkit-scrollbar-thumb{
+	background: linear-gradient(transparent,#e600e6);
+	border-radius: 30vw;
+	transition: all 0.5s ease-in-out;
+}
+.Queue_Section::-webkit-scrollbar-thumb:hover{
+	background: linear-gradient(transparent,#ff3399);
+}
+.Queue_Logo{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	margin-bottom: 3rem;
+	font-size:2rem;
+}
+/*Queue Drop Down.*/
+.Queue_DropDown{
+	cursor: pointer;
+	font-size: 2rem;
+}
+.Queue_DropDown ul{
+	height: auto;
+	width: auto;
+	position: absolute;
+	padding-top: 2rem;
+	top: -0.3rem;right: 0rem;
+	background-color: rgba(26, 26, 26,0.5);
+	display: none;
+}
+.Queue_DropDown ul li{
+	list-style: none;
+	margin-bottom:2rem;
+	margin-left: -1rem;
+	font-size: 1.4rem;
+}
+.Queue_DropDown:hover ul{
+	display: block;
+}
+.Queue_Card{
+	display: flex;
+	width: 100%;
+	height: 100px;
+	margin-bottom: 3rem;
+}
+.Card_Image{
+	height: 97%;
+	width: 30%;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 0px 0px 20px 0px  #4d4d4d;
+	position: relative;
+}
+.Song_Name{
+	height: 97%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 2rem;
+}
+.Favourite_Symbol{
+	height: 97%;
+	width: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+/*The heart symbol become red due to this css Styling.
+use at multiple place in main page and artist page to avoid
+redundancies*/
+.Favourite_Symbol:hover{
+	color: red;
+}
+.Play_button_3{
+	height: 100%;
+	width: 100%;
+	border-radius: 20px;
+	position: absolute;
+	top: 0px; left: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(102, 102, 102,0.4);
+	box-shadow: 0px 0px 20px 0px #d9d9d9;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+/*Play button appear on hovering over card using this css
+*/
+.Card_Image:hover .Play_button_3{
+	opacity: 1;
+}
+/*Few change for the small screen*/
+.Queue_At_Small_Screen .Queue_Section{
+	background-color: rgb(41, 0, 51,0.9);
+	height: 700px;
+	width: 80%;
+	top: 20vh;
+	box-shadow: none;
+	display: none;
+	z-index: 7;
+	padding: 5rem;
+}
+.My_Playlist{
+	height: 100px;
+	width: 100px;
+	font-family: monospace;
+	color: white;
+	background-color: rgb(41, 0, 51,0.9);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 20vh; 
+	border-radius: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+
+.Music_Player{
+	width: 100%;
+	position: fixed;
+	bottom: 0vh;
+	height: 18vh;
+	background-color: rgb(51, 51, 51 ,0.9);
+	border-radius: 4vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1rem;
+	font-family: monospace;
+	color: whitesmoke;
+	z-index: 1000;
+	display: none;
+}
+.Close_Music_Player{
+	height: auto;
+	width: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem;
+}
+.font_of_div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.Player_Part1{
+	display: flex;
+	justify-content: space-evenly;
+	width: 250px;
+	height: 15vh;
+}
+.Player_Part2{
+	width: 225px;
+	height: 15vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.Player_Part2_1{
+	height: 35%;
+	width: 225px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.Player_Part2_2{
+	width: 400px;
+	height: 45%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.Player_Part3{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 250px;
+	height: 15vh;
+	margin-right: 1rem;
+}
+.Music_Player:target{
+	display: flex;
+}
+
+@media all and (max-width: 1100px){
+	.Hide_Display{
+		display: none;
+	}	
+	aside.Queue_Section{
+		display: none;
+	}
+	.My_Playlist{
+		display: flex;
+	}
+	.Queue_At_Small_Screen:hover div.Queue_Section{
+		display: block;
+	}
+	.slidershow{
+		width: 100%;
+		height: 500px;
+		left: 0vw;
+	}
+	.Queue_DropDown ul{
+		height: 150px;
+		width: 180px;
+		background-color: rgb(0,0,0);
+	}
+	.Queue_DropDown{
+		font-size: 1.5rem;
+	}
+	.Queue_Logo{
+		font-size: 1.5rem;
+	}
+	.Queue_Section::-webkit-scrollbar-thumb{
+		background: linear-gradient(transparent,#d9d9d9);
+		border-radius: 30vw;
+		transition: all 0.5s ease-in-out;
+	}
+	.Queue_Section::-webkit-scrollbar-thumb:hover{
+		background: linear-gradient(transparent,#1ad1ff);
+	}
+	#Search_bar{
+		display: none;
+	}
+	#Fav{
+		font-size: 1rem;
+		width: 150px;
+	}
+	.Queue_Card{
+		height: 150px;
+	}
+	.Card_Image{
+		height: 150px;
+		width: 150px;
+	}
+
+}

@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/22406f9d4d.js" crossorigin="anonymous"></script>
+	<!-- This is Free Account. -->
+	<link href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" type="text/css" href="assets/Music_Player.css">
+	<title>Sound Cloud</title>
+</head>
+<body>
+	<nav>	
+		<div id="Nav_bar">
+			<ul class="Nav_List">
+				<li>
+					<!-- This is my custom made logo :)-->
+					<a href="#">
+						<div id="logo">
+							<i class="fas fa-smile-wink" id="logo_part4"></i>
+							<i class="fas fa-music"id="logo_part1"></i>
+							<i class="fas fa-guitar" id="logo_part2"></i>
+							<i class="fab fa-soundcloud" id="logo_part3"></i><br>
+							<font id="Logo_Name">Sound Cloud...</font>
+						</div>
+					</a>
+				</li>
+
+				<li id="Fav">
+					<a href="">
+						<font color="whitesmoke">Favourites</font>
+					</a>
+				</li>
+
+				<li id="Search_bar">
+					<i class="fas fa-search " style="position: relative;
+					left: 1.4rem;color: #93a8b3;"></i>
+
+					<input type="text" name="Search_query" placeholder="    Search">
+
+					<button type="submit"><i class="fas fa-microphone-alt"></i></button>
+				</li>
+
+				<li id="bell">
+					<a>
+						<i class="fas fa-bell fa-2x"></i>
+					</a>
+				</li>
+
+				<li id="Profile">
+					<img src="assets/image/profile.jfif" id="Profile_Pic">
+				</li>
+			</ul>	
+	</nav>	
+<!-- This Home Screen Carousel That can slide to new images by use of Rectangle button provided at the bottom of the Carousel.-->
+
+	<div class="slidershow">
+      <div class="slides">
+        <input type="radio" name="r" id="r1" checked>
+        <input type="radio" name="r" id="r2">
+        <input type="radio" name="r" id="r3">
+        <input type="radio" name="r" id="r4">
+        <input type="radio" name="r" id="r5">
+        <div class="slide s1">
+          <img src="assets/image/2.gif" alt="">
+        </div>
+        <div class="slide">
+          <img src="assets/image/4.webp" alt="">
+        </div>
+        <div class="slide">
+          <img src="assets/image/3.webp" alt="">
+        </div>
+        <div class="slide">
+          <img src="assets/image/4.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="assets/image/5.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label>
+        <label for="r3" class="bar"></label>
+        <label for="r4" class="bar"></label>
+        <label for="r5" class="bar"></label>
+      </div>
+    </div>
+<!-- 
+	These are the cards for the latest released section that make use of table for its implementation.
+ -->
+    <div class="Latest_Release">
+    <font 
+    	style="font-size: 3rem; margin-top: 2rem; margin-bottom: 2rem;">Latest Release...</font>
+    <div class="Table_contents">
+    	<a class="entry" href="#Music_Player">
+	    	<table>
+	    		<tr>
+	    			<td rowspan="2" width="50%" class="Parent_of_Image">
+	    				<img src="assets/image/2s.jpg" width="100%" height="135px" class="Image_style">
+	    				<div class="Play_button"><i class="fas fa-play"></i></div>
+	    			</td>
+	    			 <td rowspan="2" width="45%">
+	    			 	<table>
+	    			 		<tr><td>Phulkari</td></tr>
+	    			 		<tr><td>Dec 9, 2021</td></tr>
+	    			 	</table>
+	    			 </td>
+	    			 <td rowspan="2" valign="top" width="5%">
+	    			 	<div class="Parent_of_DropDown_menu1">
+		    			 	<a href="#Dropdown_Menu1"><i class="fas fa-ellipsis-h"></i></a>
+
+		    			 	<div id="Dropdown_Menu1">
+		    			 		<ul>
+		    			 			<li><a href="#"><i class="fas fa-play"></i>&nbsp; Play Now</a> </li>
+		    			 			<li><a href="#"><i class="fas fa-plus"></i> &nbsp; Add to Queue</a></li>
+		    			 			<li><a href="#"><i class="fas fa-heart"></i> &nbsp;Add to Favourite</a></li>
+		    			 			<li><a><i class="fas fa-info"></i></a> &nbsp;Get Info</li>
+		    			 		</ul>
+		    			 	</div>
+	    			 	</div>
+	    			 	<br>
+	    			 	3:25
+	    			 </td>
+	    		</tr>
+	    	</table>
+    	</a>
+
+    	<a class="entry" href ="#Music_Player">
+	    	<table>
+	    		<tr>
+	    			<td rowspan="2" width="50%" class="Parent_of_Image">
+	    				<img src="assets/image/1s.jpg" width="100%" height="135px" class="Image_style">
+	    				<div class="Play_button"><i class="fas fa-play"></i></div>
+
+	    			</td>
+	    			 <td rowspan="2" width="45%">
+	    			 	<table>
+	    			 		<tr><td> Bijlee Bijlee</td></tr>
+	    			 		<tr><td>Nov 5, 2021</td></tr>
+	    			 	</table>
+	    			 </td>
+	    			 <td rowspan="2" valign="top" width="5%">
+	    			 	<div class="Parent_of_DropDown_menu1">
+		    			 	<a href="#Dropdown_Menu1"><i class="fas fa-ellipsis-h"></i></a>
+
+		    			 	<div id="Dropdown_Menu1">
+		    			 		<ul>
+		    			 			<li><a href="#"><i class="fas fa-play"></i>&nbsp; Play Now</a> </li>
+		    			 			<li><a href="#"><i class="fas fa-plus"></i> &nbsp; Add to Queue</a></li>
+		    			 			<li><a href="#"><i class="fas fa-heart"></i> &nbsp;Add to Favourite</a></li>
+		    			 			<li><a><i class="fas fa-info"></i></a> &nbsp;Get Info</li>
+		    			 		</ul>
+		    			 	</div>
+	    			 	</div>
+	    			 	<br>
+	    			 	4:04
+	    			 </td>
+	    		</tr>
+	    	</table>
+    	</a>
+
+
+    	<a class="entry" href ="#Music_Player">
+	    	<table>
+	    		<tr>
+	    			<td rowspan="2" width="50%" class="Parent_of_Image">
+	    				<img src="assets/image/3s.webp" width="100%" height="135px" class="Image_style">
+	    				<div class="Play_button"><i class="fas fa-play"></i></div>
+
+	    			</td>
+	    			 <td rowspan="2" width="45%">
+	    			 	<table>
+	    			 		<tr><td>Chal Jindiye</td></tr>
+	    			 		<tr><td>Aug 31, 2021</td></tr>
+	    			 	</table>
+	    			 </td>
+	    			 <td rowspan="2" valign="top" width="5%">
+	    			 	<div class="Parent_of_DropDown_menu1">
+		    			 	<a href="#Dropdown_Menu1"><i class="fas fa-ellipsis-h"></i></a>
+
+		    			 	<div id="Dropdown_Menu1">
+		    			 		<ul>
+		    			 			<li><a href="#"><i class="fas fa-play"></i>&nbsp; Play Now</a> </li>
+		    			 			<li><a href="#"><i class="fas fa-plus"></i> &nbsp; Add to Queue</a></li>
+		    			 			<li><a href="#"><i class="fas fa-heart"></i> &nbsp;Add to Favourite</a></li>
+		    			 			<li><a><i class="fas fa-info"></i></a> &nbsp;Get Info</li>
+		    			 		</ul>
+		    			 	</div>
+	    			 	</div>
+	    			 	<br>
+	    			 	4:44
+	    			 </td>
+	    		</tr>
+	    	</table>
+    	</a>
+
+
+    	<a class="entry" href ="#Music_Player">
+	    	<table>
+	    		<tr>
+	    			<td rowspan="2" width="50%" class="Parent_of_Image">
+	    				<img src="assets/image/4s.jpg" width="100%" height="135px" class="Image_style">
+	    				<div class="Play_button"><i class="fas fa-play"></i></div>
+
+	    			</td>
+	    			 <td rowspan="2" width="45%">
+	    			 	<table>
+	    			 		<tr><td>Baddlan De Kaalje</td></tr>
+	    			 		<tr><td>Jul 21, 2021</td></tr>
+	    			 	</table>
+	    			 </td>
+	    			 <td rowspan="2" valign="top" width="5%">
+	    			 	<div class="Parent_of_DropDown_menu1">
+		    			 	<a href="#Dropdown_Menu1"><i class="fas fa-ellipsis-h"></i></a>
+
+		    			 	<div id="Dropdown_Menu1">
+		    			 		<ul>
+		    			 			<li><a href="#"><i class="fas fa-play"></i>&nbsp; Play Now</a> </li>
+		    			 			<li><a href="#"><i class="fas fa-plus"></i> &nbsp; Add to Queue</a></li>
+		    			 			<li><a href="#"><i class="fas fa-heart"></i> &nbsp;Add to Favourite</a></li>
+		    			 			<li><a><i class="fas fa-info"></i></a> &nbsp;Get Info</li>
+		    			 		</ul>
+		    			 	</div>
+	    			 	</div>
+	    			 	<br>
+	    			 	3:17
+	    			 </td>
+	    		</tr>
+	    	</table>
+    	</a>
+
+    	<a class="entry" href ="#Music_Player">
+	    	<table>
+	    		<tr>
+	    			<td rowspan="2" width="50%" class="Parent_of_Image">
+	    				<img src="assets/image/6s.webp" width="100%" height="135px" class="Image_style">
+	    				<div class="Play_button"><i class="fas fa-play"></i></div>
+
+	    			</td>
+	    			 <td rowspan="2" width="40%">
+	    			 	<table>
+	    			 		<tr><td>Udaarian</td></tr>
+	    			 		<tr><td>Dec 6, 2021</td></tr>
+	    			 	</table>
+	    			 </td>
+	    			 <td rowspan="2" valign="top" width="10%">
+	    			 	<div class="Parent_of_DropDown_menu1">
+		    			 	<a href="#Dropdown_Menu1"><i class="fas fa-ellipsis-h"></i></a>
+
+		    			 	<div id="Dropdown_Menu1">
+		    			 		<ul>
+		    			 			<li><a href="#"><i class="fas fa-play"></i>&nbsp;Play Now</a> </li>
+		    			 			<li><a href="#"><i class="fas fa-plus"></i> &nbsp;Add to Queue</a></li>
+		    			 			<li><a href="#"><i class="fas fa-heart"></i> &nbsp;Add to Favourite</a></li>
+		    			 			<li><a><i class="fas fa-info"></i></a> &nbsp;Get Info</li>
+		    			 		</ul>
+		    			 	</div>
+	    			 	</div>
+	    			 	<br>
+	    			 	5:50
+	    			 </td>
+	    		</tr>
+	    	</table>
+    	</a>
+
+    	<a class="entry" href ="#Music_Player">
+	    	<table>
+	    		<tr>
+	    			<td rowspan="2" width="50%" class="Parent_of_Image">
+	    				<img src="assets/image/5s.webp" width="100%" height="135px" class="Image_style">
+	    				<div class="Play_button"><i class="fas fa-play"></i></div>
+	    			</td>
+	    			 <td rowspan="2" width="40%">
+	    			 	<table>
+	    			 		<tr><td>Nira Ishq</td></tr>
+	    			 		<tr><td>Nov 15, 2021</td></tr>
+	    			 	</table>
+	    			 </td>
+	    			 <td rowspan="2" valign="top" width="10%">
+	    			 	<div class="Parent_of_DropDown_menu1">
+		    			 	<a href="#Dropdown_Menu1"><i class="fas fa-ellipsis-h"></i></a>
+
+		    			 	<div id="Dropdown_Menu1">
+		    			 		<ul>
+		    			 			<li><a href="#"><i class="fas fa-play"></i>&nbsp; Play Now</a> </li>
+		    			 			<li><a href="#"><i class="fas fa-plus"></i> &nbsp; Add to Queue</a></li>
+		    			 			<li><a href="#"><i class="fas fa-heart"></i> &nbsp;Add to Favourite</a></li>
+		    			 			<li><a><i class="fas fa-info"></i></a> &nbsp;Get Info</li>
+		    			 		</ul>
+		    			 	</div>
+	    			 	</div>
+	    			 	<br>
+	    			 	3:14
+	    			 </td>
+	    		</tr>
+	    	</table>
+    	</a>
+    </div>
+    </div>
+<!--This the popular artist section and here each card will show the play button one we hover over it and it directs to Single artist Page.-->
+
+    <div class="Pop_artist_Section">
+    	<font 
+    	style="font-size: 3rem; margin-top: 2rem; margin-bottom: 2rem;">Popular Artists...
+    	</font>
+    	<div class="Pop_Artist">
+    		<a class="Artist" href ="Artist.html" target="_blank">
+    			<img src="assets/image/singer1.jpg" height="100%" width="100%"
+    			class="Image_style_2">
+    			<div class="Play_button_2"><i class="fas fa-play"></i></div>
+    			Karan Aujla
+    		</a>
+
+    		<a class="Artist" href ="Artist.html" target="_blank">
+    			<img src="assets/image/singer2.jpg" height="100%" width="100%"
+    			class="Image_style_2">
+    			<div class="Play_button_2"><i class="fas fa-play"></i></div>
+    			Sunanda Sharma 
+    		</a>
+
+    		<a class="Artist" href ="Artist.html" target="_blank">
+    			<img src="assets/image/singer3.jpg" height="100%" width="100%"
+    			class="Image_style_2">
+    			<div class="Play_button_2"><i class="fas fa-play"></i></div>
+    			Garry Sandhu
+    		</a>
+
+    		<a class="Artist" href ="Artist.html" target="_blank">
+    			<img src="assets/image/singer4.jpg" height="100%" width="100%"
+    			class="Image_style_2">
+    			<div class="Play_button_2"><i class="fas fa-play"></i></div>
+    			Kaka
+    		</a>
+
+    		<a class="Artist" href ="Artist.html" target="_blank">
+    			<img src="assets/image/singer6.jpg" height="100%" width="100%"
+    			class="Image_style_2">
+    			<div class="Play_button_2"><i class="fas fa-play"></i></div>
+    			Arijit Singh
+    		</a>
+
+    		<a class="Artist" href ="Artist.html" target="_blank">
+    			<img src="assets/image/singer5.jpg" height="100%" width="100%"
+    			class="Image_style_2">
+    			<div class="Play_button_2"><i class="fas fa-play"></i></div>
+    			Harnoor
+    		</a>
+
+    		<a class="Artist" href ="Artist.html" target="_blank">
+    			<img src="assets/image/singer7.jpg" height="100%" width="100%"
+    			class="Image_style_2">
+    			<div class="Play_button_2"><i class="fas fa-play"></i></div>
+    			Amrinder Gill
+    		</a>
+
+    		<a class="Artist" href ="Artist.html" target="_blank">
+    			<img src="assets/image/singer8.jpg" height="100%" width="100%"
+    			class="Image_style_2">
+    			<div class="Play_button_2"><i class="fas fa-play"></i></div>
+    			Darshan Raval
+    		</a>
+    		
+    	</div>
+    </div>
+
+<!-- This is the section that will direct to new page
+	that have songs of particular genere.
+	This will be enhanced in future.
+ -->
+    <div class="Music_stations">
+    	<div class="MStations_Logo">
+    		<i class="fad fa-boombox fa-5x" style="color: cornsilk;"></i>
+    		<br>
+    		Music Stations
+    	</div>
+
+
+    	<div class="MStations">
+    		<div class="Stations" style="box-shadow: 0px 0px 30px 0px orangered;">
+    			<img src="assets/image/Love.webp" height="100%" width="100%">
+    			<div class="Station_Label">
+    				<font>Love</font>
+    			</div>
+    		</div>
+
+    		<div class="Stations" style="box-shadow: 0px 0px 30px 0px#affde7;">
+    			<img src="assets/image/retro.webp" height="100%" width="100%">
+    			<div class="Station_Label">
+    				<font>Retro</font>
+    			</div>
+    		</div>
+
+    		<div class="Stations" style="box-shadow: 0px 0px 30px 0px #d1abd5;">
+    			<img src="assets/image/bhangra.png" height="100%" width="100%">
+    			<div class="Station_Label">
+    				<font>Desi</font>
+    			</div>
+    		</div>
+    		<div class="Stations" style="box-shadow: 0px 0px 30px 0px #f6d6ad;">
+    			<img src="assets/image/workout.webp" height="100%" width="100%">
+    			<div class="Station_Label">
+    				<font>Workout</font>
+    			</div>
+    		</div>
+
+    		<div class="Stations" style="box-shadow: 0px 0px 30px 0px #485aff;">
+    			<img src="assets/image/pop.jpg" height="100%" width="100%">
+    			<div class="Station_Label">
+    				<font>Pop</font>
+    			</div>
+    		</div>
+
+    		<div class="Stations" style="box-shadow: 0px 0px 30px 0px #fece00;">
+    			<img src="assets/image/ElectroPop.webp" height="100%" width="100%">
+    			<div class="Station_Label">
+    				<font>Electro Pop</font>
+    			</div>
+    		</div>
+
+    	</div>
+    </div>
+<!-- This section that will direct to page which will
+direct to page containing the playlist according to particular environment....
+The behind image also enlarges on the hover.
+ -->
+    <div class="Special_Occasions">
+    	<div class="Special_Occasions_Logo">
+    		<i class="fad fa-guitars fa-5x" style="color: chocolate; margin-bottom:1rem;"></i>
+    		Special Playlists
+    	</div>
+    	<div class="Special_Occasion_Cards">
+    	
+	    	<div class="Socc_Card" style="box-shadow:0px 0px 30px 0px #f2be31;">
+	    		<img src="assets/image/study.jpg" class="Socc_Image">
+	    		<div class="Heading_Of_Card">
+	    			Study
+	    		</div>
+	    	</div>
+
+	    	<div class="Socc_Card" style="box-shadow:0px 0px 30px 0px #28cbe6;">
+	    		<img src="assets/image/Party.webp" class="Socc_Image">
+	    		<div class="Heading_Of_Card">
+	    			Party Hard
+	    		</div>
+	    	</div>
+
+	    	<div class="Socc_Card" style="box-shadow:0px 0px 30px 0px #f9ab81;">
+	    		<img src="assets/image/chill.webp" class="Socc_Image">
+	    		<div class="Heading_Of_Card">
+	    			Chill
+	    		</div>
+	    	</div>
+
+	    	<div class="Socc_Card" style="box-shadow:0px 0px 30px 0px #fd5b68;">
+	    		<img src="assets/image/RoadTrip.webp" class="Socc_Image">
+	    		<div class="Heading_Of_Card">
+	    			Road Trip   
+	    		</div>
+	    	</div>
+    	
+    	</div>
+  	</div>
+ <!-- The Next two sections are for the latest relaese section. -->
+  	<!--  This is for latest English Release Section.-->
+  	<div class="Lsections" >
+
+  		<div class="Lsection_Logo">
+  			<i class="fad fa-piano fa-5x" style="color: darkkhaki; margin-bottom: 1rem;"></i>
+  			Latest English
+  		</div>
+
+  		<div class="Lcards">
+
+  			<a href ="#Music_Player"class="Lcard" style="box-shadow: 0px 0px 30px 0px navajowhite;">
+  				<img src="assets/image/peaches.webp" height="150px" width="150px">
+  				Peaches<br>
+  				<font style="color: #8c8c8c;">19th March 2021</font>
+  				<div class="Play_button_Lsec">
+  					<i class="fas fa-play fa-3x"></i>
+  				</div>
+  			</a>
+
+  			<a href ="#Music_Player" class="Lcard" style="box-shadow: 0px 0px 30px 0px navajowhite;">
+  				<img src="assets/image/wow.jpg" height="150px" width="150px">
+  				Wow<br>
+  				<font style="color: #8c8c8c;">13th April 2021</font>
+  				<div class="Play_button_Lsec">
+  					<i class="fas fa-play fa-3x"></i>
+  				</div>
+  			</a>
+
+  			<a href ="#Music_Player" class="Lcard" style="box-shadow: 0px 0px 30px 0px navajowhite;">
+  				<img src="assets/image/Leave.webp" height="150px" width="150px">
+  				 Leave Before ....<br>
+  				<font style="color: #8c8c8c;">25th May 2021</font>
+  				<div class="Play_button_Lsec">
+  					<i class="fas fa-play fa-3x"></i>
+  				</div>
+  			</a>
+
+  			<a  href ="#Music_Player" class="Lcard" style="box-shadow: 0px 0px 30px 0px navajowhite;">
+  				<img src="assets/image/skin.webp" height="150px" width="150px">
+  				Skin<br>
+  				<font style="color: #8c8c8c;">2nd Feburary 2021</font>
+  				<div class="Play_button_Lsec">
+  					<i class="fas fa-play fa-3x"></i>
+  				</div>
+  			</a>
+
+  			<a href ="#Music_Player" class="Lcard" style="box-shadow: 0px 0px 30px 0px navajowhite;">
+  				<img src="assets/image/ManOnMoon.jpg" height="150px" width="150px">
+  				Man On Moon<br>
+  				<font style="color: #8c8c8c;">26 November 2021</font>
+  				<div class="Play_button_Lsec">
+  					<i class="fas fa-play fa-3x"></i>
+  				</div>
+  			</a>
+
+  			<a href ="#Music_Player" class="Lcard" style="box-shadow: 0px 0px 30px 0px navajowhite;">
+  				<img src="assets/image/skinny.jpg" height="150px" width="150px">
+  				Skinny Dipping<br>
+  				<font style="color: #8c8c8c;">9th Sep 2021</font>
+  				<div class="Play_button_Lsec">
+  					<i class="fas fa-play fa-3x"></i>
+  				</div>
+  			</a>
+  		</div>
+  	</div>
+
+<!--  This is for latest Hindi Release Section.-->
+
+  	<div class="Lsections">
+
+  		<div class="Lsection_Logo">
+  			<i class="fad fa-speakers fa-5x" style="color: chocolate; margin-bottom: 1rem;"></i>
+  			Latest Hindi
+  		</div>
+
+  		<div class="Lcards">
+  			<a href ="#Music_Player" class="Lcard" style="box-shadow: 0px 0px 30px 0px#00ffff;">
+  				<img src="assets/image/Dil.webp" height="150px" width="150px">
+  				Dil Galti Kar...<br>
+  				<font style="color: #8c8c8c;"> 25 September 2021</font>
+  				<div class="Play_button_Lsec">
+  					<i class="fas fa-play fa-3x"></i>
+  				</div>
+  			</a>
+
+  			<a href ="#Music_Player" class="Lcard" style="box-shadow: 0px 0px 30px 0px#00ffff;">
+  				<img src="assets/image/Raat.webp" height="150px" width="150px">
+  				Raataan Lambiyan<br>
+  				<font style="color: #8c8c8c;">30 July 2021</font>
+  				<div class="Play_button_Lsec">
+  					<i class="fas fa-play fa-3x"></i>
+  				</div>
+  			</a>
+
+  			<a href ="#Music_Player" class="Lcard" style="box-shadow: 0px 0px 30px 0px#00ffff;">
+  				<img src="assets/image/Mann.webp" height="150px" width="150px">
+  				 Mann Bharryaa 2.0<br>
+  				<font style="color: #8c8c8c;">15 August 2021</font>
+  				<div class="Play_button_Lsec">
+  					<i class="fas fa-play fa-3x"></i>
+  				</div>
+  			</a>
+
+  			<a href ="#Music_Player"class="Lcard" style="box-shadow: 0px 0px 30px 0px#00ffff;">
+  				<img src="assets/image/Najaa.webp" height="150px" width="150px">
+  				Najaa <br>
+  				<font style="color: #8c8c8c;">3rd November 2021</font>
+  				<div class="Play_button_Lsec">
+  					<i class="fas fa-play fa-3x"></i>
+  				</div>
+  			</a>
+
+  			<a href ="#Music_Player" class="Lcard" style="box-shadow: 0px 0px 30px 0px#00ffff;">
+  				<img src="assets/image/Sakhiyan.webp" height="150px" width="150px">
+  				Sakhiyan2.0<br>
+  				<font style="color: #8c8c8c;">13th August 2021</font>
+
+  				<div class="Play_button_Lsec">
+  					<i class="fas fa-play fa-3x"></i>
+  				</div>
+  			</a>
+
+  			<a href ="#Music_Player"class="Lcard" style="box-shadow: 0px 0px 30px 0px#00ffff;">
+  				<img src="assets/image/Lut.webp" height="150px" width="150px">
+  				Lut Gaye <br>
+  				<font style="color: #8c8c8c;">17 Feburary 2021</font>
+  				<div class="Play_button_Lsec">
+  					<i class="fas fa-play fa-3x"></i>
+  				</div>
+  			</a>
+  		</div>
+  	</div>
+<!-- This is the code for the bottom Music Player. That open this section is targeted by any other section in the page.
+It can be closed also by using cross buttom that targets any random id so that music player no longer targeted.
+
+.Hide_Display class have been provided to remove few item when screen size decreases this provide responsiveness.
+ -->
+  	<div class="Music_Player" id="Music_Player">
+  		<a class="Close_Music_Player" href="#Random_Id">
+  			<i class="fas fa-times fa-2x"></i>
+  		</a>
+  		<div class="Player_Part1">
+  			<img src="assets/image/Moonlight.webp" height="98%" width="80px" style="border-radius: 100%; box-shadow: 0px 0px 10px 0px white;">
+
+  			<div class="font_of_div">
+  				<h3>MoonLight</h3>
+  				<font style="color: #cccccc;">
+  					Harnoor
+  				</font>
+  			</div>
+
+  			<div class="Favourite_Symbol">
+  				<i class="fas fa-heart fa-2x Hide_Display"></i>
+  			</div>
+  		</div>
+
+  		<div class="Player_Part2">
+  			<div class="Player_Part2_1">
+  				<i class="fas fa-random"></i>
+  				<i class="fas fa-step-backward"></i>
+  				<i class="far fa-pause-circle fa-2x"></i>
+  				<i class="fas fa-step-forward"></i>
+  				<i class="fas fa-repeat"></i>
+  			</div>
+
+  			<div class="Player_Part2_2">
+  				0:00
+  				<input type="range" name="Song">
+  				3:34
+  			</div>
+  		</div>
+
+  		<div class="Player_Part3 Hide_Display">
+  			<i class="fas fa-list-music"></i>
+  			<i class="fas fa-computer-speaker"></i>
+  			<i class="fas fa-volume"></i>
+  			<input type="range" name="sound">
+  			<i class="fas fa-expand-alt"></i>
+  		</div>
+  	</div>
+
+<!-- This section is for My Playlist that will be in top right corner that has scroll-bar for seeing the whole My playlist.
+
+This will become invisible when screen size become small very much.
+-->
+  	<aside class="Queue_Section">
+  		<div class="Queue_Logo">
+  			<font style="font-size:2rem; margin:10px"><i class="fad fa-headphones" style="color:cadetblue;"></i>&nbsp;My Playlist</font>
+
+  			<div class="Queue_DropDown">
+  				<font>
+  					Queue <i class="fas fa-sort-down"></i>
+  				</font>
+
+  				<ul>
+  					<li><i class="fad fa-list-music"></i> Playlist</li>
+  					<li><i class="fad fa-grin-hearts"></i> Favourites</li>
+  				</ul>
+  			</div>
+  		</div>
+
+  		<div class="Queue_Card">
+  			<a class="Card_Image" href="#Music_Player">
+  				<img src="assets/image/Moonlight.webp" height="100%" width="100%">
+
+  				<div class="Play_button_3">
+  					<i class="fas fa-play fa-2x"></i>
+  				</div>
+  			</a>
+
+  			<div class="Song_Name">
+  				<div>
+  					<h1>Moonlight</h1>
+  					<h2 style="color: #666666;">Harnoor</h2>
+  				</div>
+  			</div>
+
+  			<div class="Favourite_Symbol">
+  				<i class="fas fa-heart fa-2x"></i>
+  			</div>
+  		</div>
+
+  		<div class="Queue_Card">
+  			<a class="Card_Image" href="#Music_Player">
+  				<img src="assets/image/TM.webp" height="100%" width="100%">
+
+  				<div class="Play_button_3">
+  					<i class="fas fa-play fa-2x"></i>
+  				</div>
+  			</a>
+
+  			<div class="Song_Name">
+  				<div>
+  					<h1>Teri Meri Ladayi</h1>
+  					<h2 style="color: #666666;">Maninder Buttar ft. Tania</h2>
+  				</div>
+  			</div>
+
+  			<div class="Favourite_Symbol">
+  				<i class="fas fa-heart fa-2x"></i>
+  			</div>
+  		</div>
+
+  		<div class="Queue_Card">
+  			<a class="Card_Image" href="#Music_Player">
+  				<img src="assets/image/Waalian.webp" height="100%" width="100%">
+
+  				<div class="Play_button_3">
+  					<i class="fas fa-play fa-2x"></i>
+  				</div>
+  			</a>
+
+  			<div class="Song_Name">
+  				<div>
+  					<h1>Waalian</h1>
+  					<h2 style="color: #666666;">Harnoor</h2>
+  				</div>
+  			</div>
+
+  			<div class="Favourite_Symbol">
+  				<i class="fas fa-heart fa-2x"></i>
+  			</div>
+  		</div>
+
+  		<div class="Queue_Card">
+  			<a class="Card_Image" href="#Music_Player">
+  				<img src="assets/image/Temporary.webp" height="100%" width="100%">
+
+  				<div class="Play_button_3">
+  					<i class="fas fa-play fa-2x"></i>
+  				</div>
+  			</a>
+
+  			<div class="Song_Name">
+  				<div>
+  					<h1>Temporary Pyar</h1>
+  					<h2 style="color: #666666;">Kaka ft. Anjali Arora</h2>
+  				</div>
+  			</div>
+
+  			<div class="Favourite_Symbol">
+  				<i class="fas fa-heart fa-2x"></i>
+  			</div>
+  		</div>
+
+  		<div class="Queue_Card">
+  			<a class="Card_Image" href="#Music_Player">
+  				<img src="assets/image/Raule.webp" height="100%" width="100%">
+
+  				<div class="Play_button_3">
+  					<i class="fas fa-play fa-2x"></i>
+  				</div>
+  			</a>
+
+  			<div class="Song_Name">
+  				<div>
+  					<h1>Raule</h1>
+  					<h2 style="color: #666666;">Jassa Dhillon</h2>
+  				</div>
+  			</div>
+
+  			<div class="Favourite_Symbol">
+  				<i class="fas fa-heart fa-2x"></i>
+  			</div>
+  		</div>
+
+  		<div class="Queue_Card">
+  			<a class="Card_Image" href="#Music_Player">
+  				<img src="assets/image/TKCL.webp" height="100%" width="100%">
+
+  				<div class="Play_button_3">
+  					<i class="fas fa-play fa-2x"></i>
+  				</div>
+  			</a>
+
+  			<div class="Song_Name">
+  				<div>
+  					<h1>Tujhe Kitna Chahne Lage</h1>
+  					<h2 style="color: #666666;">Arijit Singh </h2>
+  				</div>
+  			</div>
+
+  			<div class="Favourite_Symbol">
+  				<i class="fas fa-heart fa-2x"></i>
+  			</div>
+  		</div>
+
+  		<div class="Queue_Card">
+  			<a class="Card_Image" href="#Music_Player">
+  				<img src="assets/image/Bekhayali.webp" height="100%" width="100%">
+
+  				<div class="Play_button_3">
+  					<i class="fas fa-play fa-2x"></i>
+  				</div>
+  			</a>
+
+  			<div class="Song_Name">
+  				<div>
+  					<h1>Bekhayali </h1>
+  					<h2 style="color: #666666;">Sachet Tandon</h2>
+  				</div>
+  			</div>
+
+  			<div class="Favourite_Symbol">
+  				<i class="fas fa-heart fa-2x"></i>
+  			</div>
+  		</div>
+
+  		<div class="Queue_Card">
+  			<a class="Card_Image" href="#Music_Player">
+  				<img src="assets/image/Old.webp" height="100%" width="100%">
+
+  				<div class="Play_button_3">
+  					<i class="fas fa-play fa-2x"></i>
+  				</div>
+  			</a>
+
+  			<div class="Song_Name">
+  				<div>
+  					<h1>Old Skool</h1>
+  					<h2 style="color: #666666;">Prem Dhillon,Sidhu Moose Wala,Naseeb</h2>
+  				</div>
+  			</div>
+
+  			<div class="Favourite_Symbol">
+  				<i class="fas fa-heart fa-2x"></i>
+  			</div>
+  		</div>
+
+  		<div class="Queue_Card">
+  			<a class="Card_Image" href="#Music_Player">
+  				<img src="assets/image/PBTC.webp" height="100%" width="100%">
+
+  				<div class="Play_button_3">
+  					<i class="fas fa-play fa-2x"></i>
+  				</div>
+  			</a>
+
+  			<div class="Song_Name">
+  				<div>
+  					<h1>Phir Bhi Tumko Chaahunga</h1>
+  					<h2 style="color: #666666;">Mithoon,Arijit Singh,Shashaa Tirupati</h2>
+  				</div>
+  			</div>
+
+  			<div class="Favourite_Symbol">
+  				<i class="fas fa-heart fa-2x"></i>
+  			</div>
+  		</div>  		
+  	</aside>
+<!-- This section that will be appear when screen size 
+	will reduce. There will be a button of My Playlist which open My Playlist section on hover.
+
+	Rest stucture is same as before of Queue_Section.
+ -->
+  	<div class="Queue_At_Small_Screen">
+
+  		<div class="My_Playlist">
+  			My Playlist&nbsp;  
+  			<i class="fad fa-caret-down"></i>
+  		</div>
+  		<div class="Queue_Section">
+  		<div class="Queue_Logo">
+  			<font style="margin:10px"><i class="fad fa-headphones" style="color:cadetblue;"></i>&nbsp;My Playlist</font>
+
+  			<div class="Queue_DropDown">
+  				<font>
+  					Queue <i class="fas fa-sort-down"></i>
+  				</font>
+
+  				<ul>
+  					<li><i class="fad fa-list-music"></i> Playlist</li>
+  					<li><i class="fad fa-grin-hearts"></i> Favourites</li>
+  				</ul>
+  			</div>
+  		</div>
+
+  		<div class="Queue_Card">
+  			<a class="Card_Image" href="#Music_Player">
+  				<img src="assets/image/Moonlight.webp" height="100%" width="100%">
+
+  				<div class="Play_button_3">
+  					<i class="fas fa-play fa-2x"></i>
+  				</div>
+  			</a>
+
+  			<div class="Song_Name">
+  				<div>
+  					<h1>Moonlight</h1>
+  					<h2 style="color: #666666;">Harnoor</h2>
+  				</div>
+  			</div>
+
+  			<div class="Favourite_Symbol">
+  				<i class="fas fa-heart fa-2x"></i>
+  			</div>
+  		</div>
+
+  		<div class="Queue_Card">
+  			<a class="Card_Image" href="#Music_Player">
+  				<img src="assets/image/TM.webp" height="100%" width="100%">
+
+  				<div class="Play_button_3">
+  					<i class="fas fa-play fa-2x"></i>
+  				</div>
+  			</a>
+
+  			<div class="Song_Name">
+  				<div>
+  					<h1>Teri Meri Ladayi</h1>
+  					<h2 style="color: #666666;">Maninder Buttar ft. Tania</h2>
+  				</div>
+  			</div>
+
+  			<div class="Favourite_Symbol">
+  				<i class="fas fa-heart fa-2x"></i>
+  			</div>
+  		</div>
+
+  		<div class="Queue_Card">
+  			<a class="Card_Image" href="#Music_Player">
+  				<img src="assets/image/Waalian.webp" height="100%" width="100%">
+
+  				<div class="Play_button_3">
+  					<i class="fas fa-play fa-2x"></i>
+  				</div>
+  			</a>
+
+  			<div class="Song_Name">
+  				<div>
+  					<h1>Waalian</h1>
+  					<h2 style="color: #666666;">Harnoor</h2>
+  				</div>
+  			</div>
+
+  			<div class="Favourite_Symbol">
+  				<i class="fas fa-heart fa-2x"></i>
+  			</div>
+  		</div>
+
+  		<div class="Queue_Card">
+  			<a class="Card_Image" href="#Music_Player">
+  				<img src="assets/image/Temporary.webp" height="100%" width="100%">
+
+  				<div class="Play_button_3">
+  					<i class="fas fa-play fa-2x"></i>
+  				</div>
+  			</a>
+
+  			<div class="Song_Name">
+  				<div>
+  					<h1>Temporary Pyar</h1>
+  					<h2 style="color: #666666;">Kaka ft. Anjali Arora</h2>
+  				</div>
+  			</div>
+
+  			<div class="Favourite_Symbol">
+  				<i class="fas fa-heart fa-2x"></i>
+  			</div>
+  		</div>
+
+  		<div class="Queue_Card">
+  			<a class="Card_Image" href="#Music_Player">
+  				<img src="assets/image/Raule.webp" height="100%" width="100%">
+
+  				<div class="Play_button_3">
+  					<i class="fas fa-play fa-2x"></i>
+  				</div>
+  			</a>
+
+  			<div class="Song_Name">
+  				<div>
+  					<h1>Raule</h1>
+  					<h2 style="color: #666666;">Jassa Dhillon</h2>
+  				</div>
+  			</div>
+
+  			<div class="Favourite_Symbol">
+  				<i class="fas fa-heart fa-2x"></i>
+  			</div>
+  		</div>
+
+  		<div class="Queue_Card">
+  			<a class="Card_Image" href="#Music_Player">
+  				<img src="assets/image/TKCL.webp" height="100%" width="100%">
+
+  				<div class="Play_button_3">
+  					<i class="fas fa-play fa-2x"></i>
+  				</div>
+  			</a>
+
+  			<div class="Song_Name">
+  				<div>
+  					<h1>Tujhe Kitna Chahne Lage</h1>
+  					<h2 style="color: #666666;">Arijit Singh </h2>
+  				</div>
+  			</div>
+
+  			<div class="Favourite_Symbol">
+  				<i class="fas fa-heart fa-2x"></i>
+  			</div>
+  		</div>
+
+  		<div class="Queue_Card">
+  			<a class="Card_Image" href="#Music_Player">
+  				<img src="assets/image/Bekhayali.webp" height="100%" width="100%">
+
+  				<div class="Play_button_3">
+  					<i class="fas fa-play fa-2x"></i>
+  				</div>
+  			</a>
+
+  			<div class="Song_Name">
+  				<div>
+  					<h1>Bekhayali </h1>
+  					<h2 style="color: #666666;">Sachet Tandon</h2>
+  				</div>
+  			</div>
+
+  			<div class="Favourite_Symbol">
+  				<i class="fas fa-heart fa-2x"></i>
+  			</div>
+  		</div>
+
+  		<div class="Queue_Card">
+  			<a class="Card_Image" href="#Music_Player">
+  				<img src="assets/image/Old.webp" height="100%" width="100%">
+
+  				<div class="Play_button_3">
+  					<i class="fas fa-play fa-2x"></i>
+  				</div>
+  			</a>
+
+  			<div class="Song_Name">
+  				<div>
+  					<h1>Old Skool</h1>
+  					<h2 style="color: #666666;">Prem Dhillon,Sidhu Moose Wala,Naseeb</h2>
+  				</div>
+  			</div>
+
+  			<div class="Favourite_Symbol">
+  				<i class="fas fa-heart fa-2x"></i>
+  			</div>
+  		</div>
+
+  		<div class="Queue_Card">
+  			<a class="Card_Image" href="#Music_Player">
+  				<img src="assets/image/PBTC.webp" height="100%" width="100%">
+
+  				<div class="Play_button_3">
+  					<i class="fas fa-play fa-2x"></i>
+  				</div>
+  			</a>
+
+  			<div class="Song_Name">
+  				<div>
+  					<h1>Phir Bhi Tumko Chaahunga</h1>
+  					<h2 style="color: #666666;">Mithoon,Arijit Singh,Shashaa Tirupati</h2>
+  				</div>
+  			</div>
+
+  			<div class="Favourite_Symbol">
+  				<i class="fas fa-heart fa-2x"></i>
+  			</div>
+  		</div>  		
+  	</div>
+  	</div>
+</body>
+</html>
